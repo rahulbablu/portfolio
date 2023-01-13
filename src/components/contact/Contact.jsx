@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
-import {motion as m } from 'framer-motion'
+import { motion as m } from "framer-motion";
 
 const Contact = () => {
   const [error, setError] = useState(false);
@@ -47,8 +47,8 @@ const Contact = () => {
     <m.section
       className="contact section"
       id="contact"
-      initial={{ y: "100%" }}
-      animate={{ y: "0%" }}
+      initial={{ x: "100%" }}
+      animate={{ x: "0%" }}
       transition={{ duration: 0.75, ease: "easeOut" }}
       exit={{ opacity: 1 }}
     >
@@ -61,43 +61,64 @@ const Contact = () => {
         <div className="contact__content">
           <h3 className="contact__title">Talk to me</h3>
           <div className="contact__info">
-            <div className="contact__card">
-              <i className="bx bx-mail-send contact__card-icon"></i>
-              <h3 className="contact__card-title">Email</h3>
-              <span className="contact__card-data">
-                rahulkounjula@gmail.com
-              </span>
-              <a
-                href="mailto:rahulkounjula@gmail.com "
-                className="contact__button"
+            <div style={{ overflow: "hidden" }}>
+              <m.div
+                className="contact__card"
+                initial={{ x: "-100%" }}
+                animate={{ x: "0%" }}
+                transition={{ duration: 0.95, delay: 0.2, ease: "easeOut" }}
               >
-                Write me
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-              </a>
+                <i className="bx bx-mail-send contact__card-icon"></i>
+                <h3 className="contact__card-title">Email</h3>
+                <span className="contact__card-data">
+                  rahulkounjula@gmail.com
+                </span>
+                <a
+                  href="mailto:rahulkounjula@gmail.com "
+                  className="contact__button"
+                >
+                  Write me
+                  <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </m.div>
             </div>
-            <div className="contact__card">
-              <i className="bx bxl-telegram contact__card-icon"></i>
-              <h3 className="contact__card-title">Telegram</h3>
-              <span className="contact__card-data">rahulkounjula</span>
-              <a
-                href="https://telegram.me/rahulkounjula"
-                className="contact__button"
+            <div style={{ overflow: "hidden" }}>
+              <m.div
+                className="contact__card"
+                initial={{ x: "100%" }}
+                animate={{ x: "0%" }}
+                transition={{ duration: 0.95, delay: 0.35, ease: "easeOut" }}
               >
-                Ping me
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-              </a>
+                <i className="bx bxl-telegram contact__card-icon"></i>
+                <h3 className="contact__card-title">Telegram</h3>
+                <span className="contact__card-data">rahulkounjula</span>
+                <a
+                  href="https://telegram.me/rahulkounjula"
+                  className="contact__button"
+                >
+                  Ping me
+                  <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </m.div>
             </div>
-            <div className="contact__card">
-              <i className="bx bxl-linkedin contact__card-icon"></i>
-              <h3 className="contact__card-title">Linkedin</h3>
-              <span className="contact__card-data">Rahul Kounjula</span>
-              <a
-                href="https://www.linkedin.com/in/rahul-kounjula-0b0bb0157"
-                className="contact__button"
+            <div style={{ overflow: "hidden" }}>
+              <m.div
+                className="contact__card"
+                initial={{ x: "-100%" }}
+                animate={{ x: "0%" }}
+                transition={{ duration: 0.95, delay: 0.5, ease: "easeOut" }}
               >
-                Ping me
-                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
-              </a>
+                <i className="bx bxl-linkedin contact__card-icon"></i>
+                <h3 className="contact__card-title">Linkedin</h3>
+                <span className="contact__card-data">Rahul Kounjula</span>
+                <a
+                  href="https://www.linkedin.com/in/rahul-kounjula-0b0bb0157"
+                  className="contact__button"
+                >
+                  Ping me
+                  <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </m.div>
             </div>
           </div>
         </div>
