@@ -11,7 +11,7 @@ export const anim = {
 
 export const item = {
     hidden: {x: '0%'},
-    show: {x: '100%', transition:{duration: 0.9}}
+    show: {x: '100%', transition:{duration: 1.3}}
 }
 
 export const item2 = {

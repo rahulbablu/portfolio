@@ -1,131 +1,127 @@
-#projects{
+#projects {
     /* position: absolute; */
     top: 0;
     left: 0;
-    background-color: var(--body-color);
-  }
-
-  .section__subtitle{
-    margin-bottom: 2.5rem;
-  }
-  
-  .projects__container{
-    overflow: hidden;
-    width: 100%;
-
-  }
-
-  .inner_crousel{
-    display: inline-flex;
-  }
-
-.projects__card{
-    position: relative;
-    width: 450px;
-    height: 390px;
-    background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 1rem;
-    margin: 0.75rem;
-    border-radius: 1.5rem;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
+  /* background-color: var(--body-color); */
 }
 
-.projects__img{
-    border-radius: 1.5rem 1.5rem 0 0;
-    width: 100%;
-    margin-bottom: var(--mb-1);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    object-fit: cover;
-
+.section__subtitle {
+  margin-bottom: 2.5rem;
 }
 
-.projects__title{
-    font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
-    margin-bottom: var(--mb-0-25);
+.projects__container {
+  overflow: hidden;
 }
 
-.projects__description{
-    font-size: var(--small-font-size);
-    margin-bottom: 0.75rem;
-    width: max-content;
+.inner_crousel {
+  display: inline-flex;
 }
 
-.projects__link{
-    padding: 6px 10px;
-    gap: 10px;
-    font-size: var(--small-font-size);
-    cursor: pointer;
+.projects__card {
+  position: relative;
+  width: 450px;
+  height: 390px;
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 0.75rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
 
-.projects__icon{
-    font-size: 1rem;
+.projects__img {
+  border-radius: 1.5rem 1.5rem 0 0;
+  width: 100%;
+  margin-bottom: var(--mb-1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.projects__title {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-0-25);
+}
+
+.projects__description {
+  font-size: var(--small-font-size);
+  margin-bottom: 0.75rem;
+}
+
+.projects__link {
+  padding: 6px 10px;
+  gap: 10px;
+  font-size: var(--small-font-size);
+  cursor: pointer;
+}
+
+.projects__icon {
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 992px) {
-    .projects__container {
-        width: initial;
-    }
+  .projects__container {
+    width: initial;
+  }
 
-    .projects__title{
-        font-size: 1.1rem;
-    }
-    .projects__description{
-        font-size: 0.96rem;
-    }
+  .projects__title {
+    font-size: 1.1rem;
+  }
+  .projects__description {
+    font-size: 0.96rem;
+  }
 
+  .projects__card {
+    padding: 1rem 1.5rem;
+    height: 410px;
+  }
 
-    .projects__card{
-        padding: 1rem 1.5rem;
-        height: 410px;
-    }
-
-    .section__subtitle{
-        margin-bottom: 2rem;
-    }
+  .section__subtitle {
+    margin-bottom: 2rem;
+  }
 }
-
 
 @media screen and (max-width: 420px) {
-    .projects__card{
-        width: 360px;
-        height: 360px;
-        margin: 5px;
-        padding: 15px;
-    }
-    .projects__title{
-        font-size: 1.1rem;
-    }
-    .projects__description{
-        font-size: 0.96rem;
-    }
+  .projects__card {
+    width: 325px;
+    height: 400px;
+    margin: 5px;
+    padding: 15px;
+    margin-left: 0 !important;
+  }
+  .projects__title {
+    font-size: 1.1rem;
+  }
+  .projects__description {
+    font-size: 0.96rem;
+  }
 
-    .section__subtitle{
-        margin-bottom: 4rem;
-    }
+  .section__subtitle {
+    margin-bottom: 4rem;
+  }
 
-    .projects__card{
-        padding: 0.8rem;
-    }
+  .projects__card {
+    padding: 0.8rem;
+  }
 }
 
-.desc{
-    font-weight: bold;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: var(--body-color);
-    width: 100%;
-    height: 100%;
-    padding: 1rem;
+.desc {
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--body-color);
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
 }
-.descfromdata > ul{
-    list-style: disc !important;
-    padding-left: 12px;
-    line-height: 25px;
+.descfromdata > ul {
+  list-style: disc !important;
+  padding-left: 12px;
+  line-height: 25px;
 }

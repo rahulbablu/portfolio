@@ -1,6 +1,17 @@
 import React from "react";
 import { motion as m } from "framer-motion";
 
+const Data = [
+  {
+    skill: "HTML",
+    level: "Advanced",
+  },
+  {
+    skill: "CSS",
+    level: "Advanced",
+  },
+];
+
 const Backend = () => {
   return (
     <m.div
@@ -12,13 +23,15 @@ const Backend = () => {
       <h3 className="skills__title">Backend Skills</h3>
       <div className="skills__box">
         <div className="skills__group">
-          <div className="skills__data">
-            <i className="bx bx-badge-check"></i>
-            <div>
-              <h3 className="skills__name">Firebase</h3>
-              <span className="skills__level">Intermediate</span>
+          {Data.map(({ skill, level, i}) => (
+            <div className="skills__data" key={i}>
+              <i className="bx bx-badge-check"></i>
+              <div>
+                <h3 className="skills__name">{skill}</h3>
+                <span className="skills__level">{level}</span>
+              </div>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </m.div>
