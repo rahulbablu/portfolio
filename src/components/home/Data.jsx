@@ -67,7 +67,7 @@ export const Data = () => {
       </div>
       <h3 className="home__subtitle">
         I'm a <span>
-        <Typewriter words={['Developer','Designer']} cursor cursorStyle='|' typeSpeed={130} loop={false} deleteSpeed={80} />
+        <Typewriter words={['Front-End Developer','ReactJS Developer', 'Tech Enthusiast', 'Software Developer', 'Programmer']} cursor cursorStyle='|' typeSpeed={130} loop={false} deleteSpeed={80} />
         </span>
       </h3>
       <p className="home__description">

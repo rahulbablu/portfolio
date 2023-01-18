@@ -3,12 +3,12 @@ import { motion as m } from "framer-motion";
 
 const Data = [
   {
-    skill: "HTML",
-    level: "Advanced",
+    skill: "Firebase",
+    level: "Intermediate",
   },
   {
-    skill: "CSS",
-    level: "Advanced",
+    skill: "Strapi",
+    level: "Intermediate",
   },
 ];
 

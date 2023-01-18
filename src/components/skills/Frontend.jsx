@@ -12,48 +12,52 @@ const Data = [
   },
   {
     skill: "Javascript",
-    level: "Advanced",
+    level: "Intermediate",
   },
   {
     skill: "ReactJS",
-    level: "Advanced",
+    level: "Intermediate",
   },
   {
     skill: "React Hooks",
-    level: "Advanced",
+    level: "Intermediate",
   },
   {
     skill: "Redux",
-    level: "Advanced",
+    level: "Intermediate",
   },
   {
-    skill: "Sass",
+    skill: "SCSS",
     level: "Advanced",
   },
   {
     skill: "Material UI",
-    level: "Advanced",
+    level: "Intermediate",
   },
   {
     skill: "Framer-Motion",
-    level: "Advanced",
+    level: "Intermediate",
   },
   {
     skill: "Tailwind CSS",
-    level: "Advanced",
+    level: "Intermediate",
   },
 
   {
     skill: "Chakra UI",
-    level: "Advanced",
+    level: "Intermediate",
   },
   {
     skill: "Elastic UI",
-    level: "Advanced",
+    level: "Intermediate",
   },
   {
     skill: "Styled-Components",
-    level: "Advanced",
+    level: "Intermediate",
+  },
+  {
+    skill: "Git",
+    level: "Intermediate",
   },
 ];
 

@@ -51,6 +51,7 @@
 .projects__description {
   font-size: var(--small-font-size);
   margin-bottom: 0.75rem;
+  cursor: pointer;
 }
 
 .projects__link {
