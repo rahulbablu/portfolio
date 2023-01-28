@@ -21,6 +21,7 @@ import todolist from "../../assets/todolist.png";
 import reactcart from "../../assets/reactcart.png";
 import basicsite2 from "../../assets/basicsite2.png";
 import basicsite3 from "../../assets/basicsite3.png";
+import teslalandingpage from '../../assets/teslalandingpage.png'
 
 const desc1 = (
   <ul>
@@ -244,6 +245,16 @@ const desc23 = (
   </ul>
 );
 
+const desc24 = (
+  <ul>
+    <li>React-Router-Dom for Navigating Views</li>
+    <li>NavLink for active views</li>
+    <li>Tailwind CSS for Styling</li>
+    <li>Used single component for all views.</li>
+    <li>Deployed on Vercel</li>
+  </ul>
+);
+
 export const Data = [
   {
     id: 1,
@@ -287,6 +298,14 @@ export const Data = [
     description: desc5,
     description2: "Crypto App to get Charts of Coins & Details of Exchanges.",
     link: "https://crypto-app-seven-hazel.vercel.app/",
+  },
+  {
+    id: 24,
+    image: teslalandingpage,
+    title: "Tesla-Landing-Page",
+    description: desc24,
+    description2: "It's an exact clone of Tesla Landing Page.",
+    link: "https://teslalandingpage.vercel.app/",
   },
   {
     id: 6,
